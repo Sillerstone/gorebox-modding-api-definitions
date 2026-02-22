@@ -1,12 +1,26 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_config.schema.json",
-  "words": ["my-http-addon", "%s+-http%-addon"],
-  "files": ["network.lua"],
-  "settings": {
-    "Lua.workspace.preloadFileSize": 5000,
-    "Lua.workspace.ignoreDir": ["ignore-me"],
-    "Lua.diagnostics.groupSeverity": {
-      "await": "Error"
+    "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_config.schema.json",
+    "words": [
+        "GoreDollMaster",
+        "GoreBox",
+        "gorebox"
+    ],
+    "settings": {
+        "Lua.workspace.library": [
+            "/library"
+        ],
+        "Lua.runtime.special": {
+            "basicModule.assert": "assert",
+            "loadModule.dofile": "dofile",
+            "basicModule.error": "error",
+            "loadModule.loadfile": "loadfile",
+            "loadModule.loadfilesafe": "loadfile",
+            "errorHandling.pcall": "pcall",
+            "metaTable.rawget": "rawget",
+            "metaTable.rawset": "rawset",
+            "metaTable.setmetatable": "setmetatable",
+            "basicModule.type": "type",
+            "errorHandling.xpcall": "xpcall"
+        }
     }
-  }
 }
