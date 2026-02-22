@@ -3,9 +3,9 @@ from pathlib import Path
 import json
 
 current_directory = Path.cwd()
-project_directory = "gorebox-modding-api-definitions"
-if not current_directory.as_posix().endswith(project_directory):
-    print("❌ Run this script in \"" + project_directory + "\" directory")
+project_name = "gorebox-modding-api-definitions"
+if not project_name in current_directory.as_posix():
+    print("❌ Run this script in \"" + project_name + "\" directory")
     raise RuntimeError
 
 work_directory = current_directory.parent / ".vscode"
