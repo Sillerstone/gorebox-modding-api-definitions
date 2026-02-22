@@ -19,11 +19,13 @@ function File.GetCurrentPlatform() end
 ---@return string
 function File.GetModSize() end
 
+---@overload fun(code: string): any
 ---@param code string
 ---@param lua Script
 ---@return any
 function File.DoString(code, lua) end
 
+---@overload fun(relativePath: string): any
 ---@param relativePath string
 ---@param lua Script
 ---@return any

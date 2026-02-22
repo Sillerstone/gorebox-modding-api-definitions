@@ -296,10 +296,15 @@ def generate_method_overload(class_name: str, method_name: str, overload: Dict[s
     param_order = sorted(k for k in params if isinstance(k, int))
     ordered_params = [params[idx] for idx in param_order]
     
+    if class_name == "File" and method_name == "DoFile":
+        lines.append("---@overload fun(relativePath: string): any")
+    if class_name == "File" and method_name == "DoString":
+        lines.append("---@overload fun(code: string): any")
+    
     for param in ordered_params:
         ptype = normalize_type_name(param.get('type') or param.get('origtype') or '')
         lines.append(f'---@param {re.sub(r'\bend\b', 'endArgument', param.get("name", "param"))} {ptype}')
-    
+
     ret_type = overload.get('ret')
     if ret_type and 'Void' not in str(ret_type):
         lines.append(f'---@return {normalize_type_name(str(ret_type))}')
