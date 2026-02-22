@@ -113,17 +113,20 @@ function string.reverse(s) end
 ---@nodiscard
 function string.sub(s, i, j) end
 
+---@param s  string
 ---@param prefix string
 ---@return boolean
 ---@nodiscard
-function string.startsWith(prefix) end
+function string.startsWith(s, prefix) end
 
+---@param s  string
 ---@param suffix string
 ---@return boolean
 ---@nodiscard
-function string.endsWith(suffix) end
+function string.endsWith(s, suffix) end
 
+---@param s  string
 ---@param substring string
 ---@return boolean
 ---@nodiscard
-function string.contains(substring) end
+function string.contains(s, substring) end
