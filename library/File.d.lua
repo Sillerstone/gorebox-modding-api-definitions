@@ -24,7 +24,6 @@ function File.GetModSize() end
 ---@return any
 function File.DoString(code, lua) end
 
----@overload fun(relativePath: string): any
 ---@param relativePath string
 ---@param lua Script
 ---@return any
