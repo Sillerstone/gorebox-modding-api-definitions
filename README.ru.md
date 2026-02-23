@@ -1,8 +1,8 @@
 # 📃 GoreBox modding API Lua definitions
-#### [English](README.md) | [Русский](README.ru.md)
+#### [English](https://github.com/Sillerstone/gorebox-modding-api-definitions) | [Русский](README.ru.md)
 
 ## Установка и обновление
-1. Установите расширение для LUA от sumneko: https://marketplace.visualstudio.com/items?itemName=sumneko.lua
+1. Установите расширение для Lua от sumneko: https://marketplace.visualstudio.com/items?itemName=sumneko.lua
 2. Скачайте этот проект, разархивируйте его и переместите в папку проекта вашего мода
 3. Установите Python
 4. Откройте терминал в `gorebox-modding-api-definitions-main` директории
@@ -12,13 +12,13 @@ py install.py
 ```
 1. Удалите `gorebox-modding-api-definitions-main` директорию
 
-## Конвертация файла дампа в файлы LUA definition
+## Конвертация файла дампа в файлы Lua definition
 ```bash
 py converter.py dump.txt -o library/
 ```
 
 ## Советы и рекомендации
-1. Для включения типизации LUA модулей, аннотируйте модуль аннотацией @module:
+1. Для включения типизации Lua модулей, аннотируйте модуль аннотацией @module:
 ```lua
 ---@module "module"
 local module = File.DoFile("mod_directory/module.lua")
