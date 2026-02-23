@@ -1,5 +1,6 @@
 # 📃 GoreBox modding API Lua definitions
-#### [English](https://github.com/Sillerstone/gorebox-modding-api-definitions) | [Русский](README.ru.md)
+#### English | [Русский](README.ru.md)
+GoreBox modding API Lua definition files with conversion and installation tools for VS Code
 
 ## Installation and update
 1. Install sumneko`s Lua extension: https://marketplace.visualstudio.com/items?itemName=sumneko.lua
