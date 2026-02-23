@@ -16,6 +16,10 @@ function ResourceImporter.ImportAudioClip(path) end
 ---@return any
 function ResourceImporter.ImportModel(path) end
 
+---@param path string
+---@param luaCallback function
+function ResourceImporter.ImportModelAsync(path, luaCallback) end
+
 ---@param width integer
 ---@param height integer
 ---@param pixels Vector4[]

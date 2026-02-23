@@ -4,6 +4,9 @@
 ---@class PlayerMaster
 ---@field Cripple boolean
 ---@field Grounded boolean
+---@field Ragdolled boolean
+---@field TrirdPersonCameraUp number
+---@field TrirdPersonCameraFollowDistance number
 ---@field CurrentItem integer
 ---@field Speed number
 ---@field Endurance number
@@ -30,13 +33,20 @@
 ---@field Air number
 ---@field Blood integer
 ---@field Condition number
----@field ToolgunMode integer
+---@field RCV2Mode integer
 ---@field CurrentWeaponName string
 ---@field SpawnablePath string
 PlayerMaster = {}
 
 ---@param ignoreColldown boolean
 function PlayerMaster.Ragdoll(ignoreColldown) end
+
+---@return boolean
+function PlayerMaster.GetInThirdPerson() end
+
+---@param target Component
+---@param emoteSwitch boolean
+function PlayerMaster.Do3rdPerson(target, emoteSwitch) end
 
 function PlayerMaster.GetUp() end
 

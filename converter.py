@@ -310,7 +310,10 @@ def generate_method_overload(class_name: str, method_name: str, overload: Dict[s
     
     for param in ordered_params:
         ptype = normalize_type_name(param.get('type') or param.get('origtype') or '')
-        lines.append(f'---@param {re.sub(r'\bend\b', 'endArgument', param.get("name", "param"))} {ptype}')
+        param_name = param.get("name", "param")
+        if "callback" in param_name.lower():
+            ptype = "function"
+        lines.append(f'---@param {re.sub(r'\bend\b', 'endArgument', param_name)} {ptype}')
 
     ret_type = overload.get('ret')
     if ret_type and 'Void' not in str(ret_type):
