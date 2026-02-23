@@ -1,6 +1,5 @@
 # 📃 GoreBox modding API Lua definitions
 #### [English](https://github.com/Sillerstone/gorebox-modding-api-definitions) | Русский
-GoreBox modding API Lua definition files with conversion and installation tools for VS Code
 Файлы Lua definition для GoreBox моддинг API с инструментами для конвертации и установки в VS Code
 
 ## Установка и обновление
