@@ -1,10 +1,11 @@
 # 📃 GoreBox modding API Lua definitions
 
 ## Installation
-1. Download this project, unarchive it and move it to your mod`s folder.
-2. Install Python
-3. Open terminal in `gorebox-modding-api-definitions-main` directory
-4. Run `install.py` script:
+1. Install sumneko`s LUA extension: https://marketplace.visualstudio.com/items?itemName=sumneko.lua
+2. Download this project, unarchive it and move it to your mod`s folder.
+3. Install Python
+4. Open terminal in `gorebox-modding-api-definitions-main` directory
+5. Run `install.py` script:
 ```bash
 py install.py
 ```
