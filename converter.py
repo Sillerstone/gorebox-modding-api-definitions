@@ -298,8 +298,15 @@ def generate_method_overload(class_name: str, method_name: str, overload: Dict[s
     
     if class_name == "File" and method_name == "DoFile":
         lines.append("---@overload fun(relativePath: string): any")
-    if class_name == "File" and method_name == "DoString":
+    elif class_name == "File" and method_name == "DoString":
         lines.append("---@overload fun(code: string): any")
+    elif class_name == "File" and method_name == "ImportFile":
+        lines.append("---@overload fun(path: string): string")
+    elif class_name == "Server" and method_name == "SendChatMessage":
+        lines.append("---@overload fun(msg: string)")
+    elif class_name == "Player" and method_name == "SendChatMessage":
+        lines.append("---@overload fun(msg: string)")
+    
     
     for param in ordered_params:
         ptype = normalize_type_name(param.get('type') or param.get('origtype') or '')

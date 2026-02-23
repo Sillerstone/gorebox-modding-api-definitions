@@ -68,6 +68,7 @@ function File.ImportFileBytes(path) end
 ---@param content string
 function File.ExportFile(path, content) end
 
+---@overload fun(path: string): string
 ---@param path string
 ---@param content string
 ---@return string

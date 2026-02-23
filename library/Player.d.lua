@@ -49,6 +49,7 @@ function Player.RemoveCash(count) end
 ---@param position Vector3
 function Player.Teleport(position) end
 
+---@overload fun(msg: string)
 ---@param msg string
 ---@param delay number
 function Player.SendChatMessage(msg, delay) end

@@ -11,6 +11,7 @@ function Server.SendServerEvent(data) end
 ---@param component Component
 function Server.AllocateViewID(component) end
 
+---@overload fun(msg: string)
 ---@param msg string
 ---@param delay number
 function Server.SendChatMessage(msg, delay) end

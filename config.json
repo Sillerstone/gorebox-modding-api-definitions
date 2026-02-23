@@ -7,7 +7,7 @@
     ],
     "settings": {
         "Lua.workspace.library": [
-            "/library"
+            ".vscode/lua/gorebox"
         ],
         "Lua.runtime.special": {
             "basicModule.assert": "assert",

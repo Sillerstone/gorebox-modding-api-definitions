@@ -27,7 +27,7 @@ with settings_file.open("r", encoding="utf-8") as f:
     except json.JSONDecodeError:
         data = {}
 
-data["Lua.workspace.library"] = ["/libraryy"]
+data["Lua.workspace.library"] = [".vscode/lua/gorebox"]
 data["Lua.runtime.special"] = {
     "basicModule.assert": "assert",
     "loadModule.dofile": "dofile",
