@@ -1,6 +1,7 @@
 # 📃 GoreBox modding API Lua definitions
+#### [English](README.md) | [Русский](README.ru.md)
 
-## Installation
+## Installation and update
 1. Install sumneko`s LUA extension: https://marketplace.visualstudio.com/items?itemName=sumneko.lua
 2. Download this project, unarchive it and move it to your mod`s folder.
 3. Install Python
