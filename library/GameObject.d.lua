@@ -8,14 +8,14 @@
 ---@field Tag string
 ---@field Material Material
 ---@field Transform Transform
----@field go any
+---@field go GameObject
 GameObject = {}
 
 ---@return boolean
 function GameObject.IsValid() end
 
----@param target any
----@return any
+---@param target GameObject
+---@return GameObject
 function GameObject.GetFromUnity(target) end
 
 ---@return EventListener
@@ -77,7 +77,7 @@ function GameObject.GetSpawnPath() end
 function GameObject.GetComponentsInParent(name) end
 
 ---@param name string
----@return any
+---@return GameObject
 function GameObject.FindByName(name) end
 
 ---@param tagName string
@@ -89,23 +89,23 @@ function GameObject.FindAllByTag(tagName) end
 function GameObject.FindAllByComponent(cName) end
 
 ---@param path string
----@return any
+---@return GameObject
 function GameObject.Instantiate(path) end
 
 ---@param path string
----@return any
+---@return GameObject
 function GameObject.InstantiateLocal(path) end
 
 ---@param path string
----@return any
+---@return GameObject
 function GameObject.InstantiatePermanent(path) end
 
 ---@param name string
----@return any
+---@return GameObject
 function GameObject.Create(name) end
 
----@param original any
----@return any
+---@param original GameObject
+---@return GameObject
 function GameObject.Copy(original) end
 
 function GameObject.ClearObjects() end

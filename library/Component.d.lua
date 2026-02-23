@@ -3,7 +3,7 @@
 
 ---@class Component
 ---@field component Component
----@field GameObject any
+---@field GameObject GameObject
 ---@field Active boolean
 Component = {}
 

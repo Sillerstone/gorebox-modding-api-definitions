@@ -2,7 +2,7 @@
 
 
 ---@class Transform
----@field GameObject any
+---@field GameObject GameObject
 ---@field Forward Vector3
 ---@field Right Vector3
 ---@field Up Vector3

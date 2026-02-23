@@ -13,7 +13,7 @@ function ResourceImporter.ImportTexture(path) end
 function ResourceImporter.ImportAudioClip(path) end
 
 ---@param path string
----@return any
+---@return GameObject
 function ResourceImporter.ImportModel(path) end
 
 ---@param path string
@@ -28,7 +28,7 @@ function ResourceImporter.CreateTexture(width, height, pixels) end
 
 ---@param pathToBundle string
 ---@param resourcePath string
----@return any
+---@return GameObject
 function ResourceImporter.LoadGameObjectFromAssetBundle(pathToBundle, resourcePath) end
 
 ---@param pathToBundle string

@@ -39,7 +39,8 @@ TYPE_RENAMES = {
     "LUAModding.LuaGUI": "GUI",
     "LUAModding.LuaGUIStyle": "GUIStyle",
     "MoonSharp.Interpreter.Table": "table",
-    "LUAModding.LuaPUNPlayer": "Player"
+    "LUAModding.LuaPUNPlayer": "Player",
+    "LUAModding.LuaGameObject": "GameObject",
 }
 
 EXCLUDED_METHODS = {
@@ -169,9 +170,8 @@ def normalize_class_name(fullname: str) -> str:
 
 def normalize_type_name(dotnet_type: str) -> str:
     """Type name normalization (for @param, @return, @field)"""
-    dotnet_type_lower = dotnet_type.lower()
     for special in SPECIAL_ANY_TYPES:
-        if dotnet_type == special or dotnet_type_lower.endswith(special.lower()):
+        if dotnet_type == special:
             return 'any'
 
     if dotnet_type in TYPE_RENAMES:
