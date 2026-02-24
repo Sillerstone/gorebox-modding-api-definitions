@@ -11,7 +11,7 @@ GoreBox modding API Lua definition files with conversion and installation tools 
 ```bash
 py install.py
 ```
-1. Remove `gorebox-modding-api-definitions-main` directory
+6. Remove `gorebox-modding-api-definitions-main` directory
 
 ## Dump to Lua definition files conversion
 ```bash

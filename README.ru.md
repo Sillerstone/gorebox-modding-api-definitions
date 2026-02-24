@@ -11,7 +11,7 @@
 ```bash
 py install.py
 ```
-1. Удалите `gorebox-modding-api-definitions-main` директорию
+6. Удалите `gorebox-modding-api-definitions-main` директорию
 
 ## Конвертация файла дампа в файлы Lua definition
 ```bash
