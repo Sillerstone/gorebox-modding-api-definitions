@@ -45,4 +45,4 @@ data["Lua.runtime.special"] = {
 with settings_file.open("w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=4)
 
-print("📃 LUA definition files installed successfully!")
+print("📃 Lua definition files installed successfully!")
