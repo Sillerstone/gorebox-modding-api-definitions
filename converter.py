@@ -307,13 +307,16 @@ def generate_method_overload(class_name: str, method_name: str, overload: Dict[s
     elif class_name == "Player" and method_name == "SendChatMessage":
         lines.append("---@overload fun(msg: string)")
     
-    
     for param in ordered_params:
-        ptype = normalize_type_name(param.get('type') or param.get('origtype') or '')
+        param_type = normalize_type_name(param.get('type') or param.get('origtype') or '')
         param_name = param.get("name", "param")
         if "callback" in param_name.lower():
-            ptype = "function"
-        lines.append(f'---@param {re.sub(r'\bend\b', 'endArgument', param_name)} {ptype}')
+            param_type = "function"
+        param_name = re.sub(r'\bend\b', 'endArgument', param_name)
+        if class_name == "Player" and method_name == "ShowSubtitles":
+            if param_name in ["importance", "shake", "reset"]:
+                param_type += "?"
+        lines.append(f'---@param {param_name} {param_type}')
 
     ret_type = overload.get('ret')
     if ret_type and 'Void' not in str(ret_type):

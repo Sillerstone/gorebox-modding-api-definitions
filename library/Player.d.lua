@@ -56,9 +56,9 @@ function Player.SendChatMessage(msg, delay) end
 
 ---@param msg string
 ---@param color Vector3
----@param importance integer
----@param shake number
----@param reset boolean
+---@param importance integer?
+---@param shake number?
+---@param reset boolean?
 function Player.ShowSubtitles(msg, color, importance, shake, reset) end
 
 ---@param ActionCam boolean
