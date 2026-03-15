@@ -36,6 +36,11 @@ function Component.GetMethods() end
 ---@return string
 function Component.GetMethodForm(methodName) end
 
+---@param methodName string
+---@param args any[]
+---@return UnknownType
+function Component.CallMethodWithUnknownRetType(methodName, args) end
+
 ---@param fieldName string
 ---@return UnknownType
 function Component.GetAsUnknownType(fieldName) end

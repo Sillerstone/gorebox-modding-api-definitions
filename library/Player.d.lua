@@ -10,11 +10,17 @@
 ---@field player Player
 Player = {}
 
+---@return UnknownType
+function Player.ToUnknownType() end
+
 ---@return Player
 function Player.GetLocal() end
 
 ---@return Player[]
 function Player.GetAllPlayers() end
+
+---@param name string
+function Player.GiveWeapon(name) end
 
 ---@return Transform
 function Player.GetCharacter() end

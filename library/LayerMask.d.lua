@@ -5,6 +5,9 @@
 ---@field value integer
 LayerMask = {}
 
+---@return UnknownType
+function LayerMask.ToUnknownType() end
+
 ---@return LayerMask
 function LayerMask.ToLayerMask() end
 

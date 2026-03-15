@@ -5,6 +5,9 @@
 ---@field clip AudioClip
 AudioClip = {}
 
+---@return UnknownType
+function AudioClip.ToUnknownType() end
+
 ---@return number
 function AudioClip.Length() end
 

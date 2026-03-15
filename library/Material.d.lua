@@ -15,6 +15,9 @@
 ---@field color Vector4
 Material = {}
 
+---@return UnknownType
+function Material.ToUnknownType() end
+
 ---@return Material
 function Material.Create() end
 

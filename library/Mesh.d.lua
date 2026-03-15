@@ -5,6 +5,9 @@
 ---@field mesh Mesh
 Mesh = {}
 
+---@return UnknownType
+function Mesh.ToUnknownType() end
+
 ---@return Mesh
 function Mesh.New() end
 

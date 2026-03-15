@@ -16,6 +16,9 @@
 ---@field transform Transform
 Transform = {}
 
+---@return UnknownType
+function Transform.ToUnknownType() end
+
 ---@return boolean
 function Transform.IsValid() end
 

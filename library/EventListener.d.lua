@@ -2,6 +2,7 @@
 
 
 ---@class EventListener
+---@field info GBMod
 ---@field rigidbody Rigidbody
 ---@field collider Collider
 ---@field OnTriggerEnter Event

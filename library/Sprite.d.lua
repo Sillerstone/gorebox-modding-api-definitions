@@ -6,6 +6,9 @@
 ---@field Texture Texture
 Sprite = {}
 
+---@return UnknownType
+function Sprite.ToUnknownType() end
+
 ---@param texture Texture
 ---@return Sprite
 function Sprite.New(texture) end

@@ -5,6 +5,9 @@
 ---@field texture Texture2D
 Texture = {}
 
+---@return UnknownType
+function Texture.ToUnknownType() end
+
 ---@return integer
 function Texture.GetWidth() end
 

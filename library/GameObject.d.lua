@@ -11,6 +11,9 @@
 ---@field go GameObject
 GameObject = {}
 
+---@return UnknownType
+function GameObject.ToUnknownType() end
+
 ---@return boolean
 function GameObject.IsValid() end
 
@@ -87,6 +90,13 @@ function GameObject.FindAllByTag(tagName) end
 ---@param cName string
 ---@return GameObject[]
 function GameObject.FindAllByComponent(cName) end
+
+---@return integer
+function GameObject.GetInstanceID() end
+
+---@param id integer
+---@return GameObject
+function GameObject.FindByID(id) end
 
 ---@param path string
 ---@return GameObject

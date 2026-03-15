@@ -31,3 +31,8 @@ function UnknownType.GetMethodForm(methodName) end
 ---@param fieldName string
 ---@return UnknownType
 function UnknownType.GetAsUnknownType(fieldName) end
+
+---@param methodName string
+---@param args any[]
+---@return UnknownType
+function UnknownType.CallMethodWithUnknownRetType(methodName, args) end
